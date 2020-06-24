@@ -1,8 +1,8 @@
-#!/usr/bin/env php
 <?php
 
+namespace BrainGames\Src\Cli;
+
 $autoloadPath1 = __DIR__ . '/../../../autoload.php';
-// Путь для локальной работы с проектом
 $autoloadPath2 = __DIR__ . '/../vendor/autoload.php';
 
 if (file_exists($autoloadPath1)) {
@@ -11,6 +11,13 @@ if (file_exists($autoloadPath1)) {
     require_once $autoloadPath2;
 }
 
-use BrainGames\Src\Cli;
+use function cli\line;
+use function cli\prompt;
 
-Cli\run();
+
+function run()
+{
+    line('Welcome to the Brain Game!');
+    $name = prompt('May I have your name?');
+    return line("Hello, %s!", $name);
+}

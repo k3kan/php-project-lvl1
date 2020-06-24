@@ -2,6 +2,11 @@
     "name": "k3kan/test-package",
     "bin":["bin/brain-games"],
     "description": "First project",
+    "autoload": {
+	"files": [
+		"src/Cli.php"
+	]
+	},
     "authors": [
         {
             "name": "K3kan",
@@ -9,6 +14,7 @@
         }
     ],
     "require": {
-	"php" : "^7.0"
+	"php" : "^7.0",
+        "wp-cli/php-cli-tools": "^0.11.11"
      }
 }
