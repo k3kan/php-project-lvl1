@@ -14,7 +14,8 @@ if (file_exists($autoloadPath1)) {
 use function cli\line;
 use function cli\prompt;
 
-
+/** ask user your name
+ * /
 function run()
 {
     line('Welcome to the Brain Game!');
