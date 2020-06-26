@@ -26,3 +26,5 @@ jobs:
     - name: Run make lint
       run: make lint
 
+    - name: Run make lint
+      run: echo Hello World
