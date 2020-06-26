@@ -30,5 +30,8 @@ jobs:
           # Specify the PHP version
           php-version: '7.3'
     # Runs a single command using the runners shell
+    - name: Run make install
+      run: make install
+    
     - name: Run make lint
       run: make lint
