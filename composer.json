@@ -1,6 +1,8 @@
 {
     "name": "k3kan/test-package",
-    "bin":["bin/brain-games"],
+    "bin":["bin/brain-games",
+	   "bin/brain-even"
+	],
     "description": "First project",
     "autoload": {
 	"files": [
