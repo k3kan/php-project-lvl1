@@ -3,7 +3,11 @@
 <a href="https://codeclimate.com/github/k3kan/php-project-lvl1/maintainability"><img src="https://api.codeclimate.com/v1/badges/5b0c2148ed530abb9d2f/maintainability" /></a>
 
 # brain games
+
+
 Install brain games
+
+
 <a href="https://asciinema.org/a/3kQciJXDh2REkTtWdRzbWwE1C" target="_blank"><img src="https://asciinema.org/a/3kQciJXDh2REkTtWdRzbWwE1C.svg" /></a>
 
 
