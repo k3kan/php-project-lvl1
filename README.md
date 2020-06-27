@@ -8,7 +8,7 @@
 Install brain games
 
 
-<a href="https://asciinema.org/a/3kQciJXDh2REkTtWdRzbWwE1C" target="_blank"><img src="https://asciinema.org/a/3kQciJXDh2REkTtWdRzbWwE1C.svg" /></a>
+<a href="https://asciinema.org/a/qZIU0DKaMYDGoIhdLL4l1T8if" target="_blank"><img src="https://asciinema.org/a/qZIU0DKaMYDGoIhdLL4l1T8if.svg" /></a>
 
 
 Correct 
