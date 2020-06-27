@@ -1,5 +1,4 @@
 #!/usr/bin/env php
-
 <?php
 
 namespace bin\Brain\Even;
@@ -53,5 +52,3 @@ if ($count === 3) {
 }
 
 PatiryCheck();
-
-
