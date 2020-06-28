@@ -11,11 +11,14 @@ Install brain games
 <a href="https://asciinema.org/a/qZIU0DKaMYDGoIhdLL4l1T8if" target="_blank"><img src="https://asciinema.org/a/qZIU0DKaMYDGoIhdLL4l1T8if.svg" /></a>
 
 
-Correct 
+Brain even (parity check correct) 
 
 <a href="https://asciinema.org/a/ebrEuLQ04RXMQyR7NlW4vqEQ3" target="_blank"><img src="https://asciinema.org/a/ebrEuLQ04RXMQyR7NlW4vqEQ3.svg" /></a>
 
-Incorrect
+Brain even (parity check incorrect)
 
 <a href="https://asciinema.org/a/3kQciJXDh2REkTtWdRzbWwE1C" target="_blank"><img src="https://asciinema.org/a/3kQciJXDh2REkTtWdRzbWwE1C.svg" /></a>
 
+Brain-calc
+
+<a href="https://asciinema.org/a/TpvNKLbckOdpuWL11Hx48HOE7" target="_blank"><img src="https://asciinema.org/a/TpvNKLbckOdpuWL11Hx48HOE7.svg" /></a>
