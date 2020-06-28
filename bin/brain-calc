@@ -1,6 +1,7 @@
 #!/usr/bin/env php
 <?php
 
+
 namespace bin\Brain\Calc;
 
 $autoloadPath1 = __DIR__ . '/../../../autoload.php';
