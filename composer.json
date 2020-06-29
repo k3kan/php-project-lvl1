@@ -2,7 +2,8 @@
     "name": "k3kan/test-package",
     "bin":["bin/brain-games",
 	   "bin/brain-even",
-	   "bin/brain-calc"
+	   "bin/brain-calc",
+	   "bin/brain-gcd"
 	],
     "description": "First project",
     "autoload": {
