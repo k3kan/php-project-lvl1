@@ -28,3 +28,8 @@ Correct
 Incorrect
 
 <a href="https://asciinema.org/a/ENuinE2IxObJGTBUZcpaGzoU3" target="_blank"><img src="https://asciinema.org/a/ENuinE2IxObJGTBUZcpaGzoU3.svg" /></a>
+
+
+Find the greatest common divisor of given numbers
+
+<a href="https://asciinema.org/a/SbTZo05AvfeWH6WDepJ7oBS1B" target="_blank"><img src="https://asciinema.org/a/SbTZo05AvfeWH6WDepJ7oBS1B.svg" /></a>
