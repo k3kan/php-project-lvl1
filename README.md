@@ -21,4 +21,10 @@ Brain even (parity check incorrect)
 
 Brain-calc
 
+Correct
+
 <a href="https://asciinema.org/a/TpvNKLbckOdpuWL11Hx48HOE7" target="_blank"><img src="https://asciinema.org/a/TpvNKLbckOdpuWL11Hx48HOE7.svg" /></a>
+
+Incorrect
+
+<a href="https://asciinema.org/a/ENuinE2IxObJGTBUZcpaGzoU3" target="_blank"><img src="https://asciinema.org/a/ENuinE2IxObJGTBUZcpaGzoU3.svg" /></a>
