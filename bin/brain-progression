@@ -23,7 +23,7 @@ function random()
 
 line('Welcome to the Brain Game!');
 line('What number is missing in the progression?');
-$name = prompt('You answer');
+$name = prompt('May I have you name?');
 line("Hello, %s!", $name);
 
 function progression()
@@ -50,7 +50,7 @@ function progression()
             $count++;
         }
         else {
-            line("'%s' is wrong answer ;(. Correct answer was %s.", $answer, $temp);
+            line("'%s' is wrong answer ;(. Correct answer was '%s'.", $answer, $temp);
             line("Let's try again, %s!", $name);
             break;
         }
