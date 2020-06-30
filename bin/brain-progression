@@ -1,0 +1,66 @@
+#!/usr/bin/env php
+<?php
+
+
+namespace Bin\Brain\Progression;
+
+$autoloadPath1 = __DIR__ . '/../../../autoload.php';
+$autoloadPath2 = __DIR__ . '/../vendor/autoload.php';
+
+if (file_exists($autoloadPath1)) {
+    require_once $autoloadPath1;
+} else {
+    require_once $autoloadPath2;
+}
+
+use function cli\prompt;
+use function cli\line;
+
+function random()
+{
+    return rand(1,100);
+}
+
+line('Welcome to the Brain Game!');
+line('What number is missing in the progression?');
+$name = prompt('You answer');
+line("Hello, %s!", $name);
+
+function progression()
+{
+    global $name;
+    $count = 0;
+    while ($count !== 3) {
+        $step = rand(1,5);
+        $start_number = random();
+        $array = [];
+        $number = $start_number;
+        for ($i = 0; $i < 10; $i++) {
+            $number += $step;
+            $array[] = $number;
+        }
+        $close_number = rand(0, 9);
+        $temp = $array[$close_number];
+        $array[$close_number] = '..';
+        $string = implode(' ', $array);
+        print_r($string);
+        $answer = prompt("\nYour answer");
+        if ((int) $temp === (int) $answer) {
+            line("Correct!");
+            $count++;
+        }
+        else {
+            line("'%s' is wrong answer ;(. Correct answer was %s.", $answer, $temp);
+            line("Let's try again, %s!", $name);
+            break;
+        }
+    }
+    if ($count === 3) {
+        line("Congratulation, %s!", $name);
+    }
+
+
+}
+
+
+progression();
