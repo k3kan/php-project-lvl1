@@ -33,3 +33,8 @@ Incorrect
 Find the greatest common divisor of given numbers
 
 <a href="https://asciinema.org/a/SbTZo05AvfeWH6WDepJ7oBS1B" target="_blank"><img src="https://asciinema.org/a/SbTZo05AvfeWH6WDepJ7oBS1B.svg" /></a>
+
+Brain-progression
+
+
+<a href="https://asciinema.org/a/wSrmDPQ5fxHwYC3KmVccOKqsD" target="_blank"><img src="https://asciinema.org/a/wSrmDPQ5fxHwYC3KmVccOKqsD.svg" /></a>
