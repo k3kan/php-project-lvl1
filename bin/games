@@ -14,10 +14,10 @@ if (file_exists($autoloadPath1)) {
 
 use function cli\prompt;
 use function cli\line;
-use BrainGames\Src\Calc;
-use BrainGames\Src\Even;
-use BrainGames\Src\Gcd;
-use BrainGames\Src\Prime;
+use BrainGames\Games\Calc;
+use BrainGames\Games\Even;
+use BrainGames\Games\Gcd;
+use BrainGames\Games\Prime;
 use BrainGames\Src\Progression;
 
 function random()

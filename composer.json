@@ -12,11 +12,11 @@
     "autoload": {
 	"files": [
 		"src/Cli.php",
-                "src/Calc.php",
-		"src/Even.php",
-                "src/gcd.php",
-                "src/prime.php",
-                "src/progression.php"
+                "games/Calc.php",
+		"games/Even.php",
+                "games/gcd.php",
+                "games/prime.php",
+                "games/progression.php"
 	]
 	},
     "authors": [
