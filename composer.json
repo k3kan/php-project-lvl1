@@ -5,12 +5,18 @@
 	   "bin/brain-calc",
 	   "bin/brain-gcd",
 	   "bin/brain-progression",
-           "bin/brain-prime"
+           "bin/brain-prime",
+           "bin/games"
 	],
     "description": "First project",
     "autoload": {
 	"files": [
-		"src/Cli.php"
+		"src/Cli.php",
+                "src/Calc.php",
+		"src/Even.php",
+                "src/gcd.php",
+                "src/prime.php",
+                "src/progression.php"
 	]
 	},
     "authors": [
