@@ -28,8 +28,8 @@ Brain-calc (Incorrect answers)
 <a href="https://asciinema.org/a/ENuinE2IxObJGTBUZcpaGzoU3" target="_blank"><img src="https://asciinema.org/a/ENuinE2IxObJGTBUZcpaGzoU3.svg" /></a>
 
 
-Brain-prime
-Answer "yes" if given number is prime. Otherwise answer "no"
+Brain-prime.
+Answer "yes" if given number is prime. Otherwise answer "no".
 Correct answers
 
 <a href="https://asciinema.org/a/I3lQomPvcbiB8pGjbH6vimR2k" target="_blank"><img src="https://asciinema.org/a/I3lQomPvcbiB8pGjbH6vimR2k.svg" /></a>
@@ -40,9 +40,9 @@ Incorrect answers
 <a href="https://asciinema.org/a/irJIF6Jc0dOweZi3GxC7LQgcz" target="_blank"><img src="https://asciinema.org/a/irJIF6Jc0dOweZi3GxC7LQgcz.svg" /></a>
 
 
-Brain-gcd
+Brain-gcd.
 Find the greatest common divisor of given numbers.
-Correct answers
+Correct answers.
 
 <a href="https://asciinema.org/a/vxiT9Qsy7OoiRl0pdlUgdeyDr" target="_blank"><img src="https://asciinema.org/a/vxiT9Qsy7OoiRl0pdlUgdeyDr.svg" /></a>
 
@@ -53,9 +53,9 @@ Incorrect answers
 
 
 
-Brain-progression
+Brain-progression.
 What number is missing in the progression?
-Correct answers
+Correct answers.
 
 <a href="https://asciinema.org/a/vPcA9P0LYcbdjEp5NNxa8eMk5" target="_blank"><img src="https://asciinema.org/a/vPcA9P0LYcbdjEp5NNxa8eMk5.svg" /></a>
 
@@ -67,5 +67,5 @@ Incorrect answers
 
 Full games
 
-
+<a href="https://asciinema.org/a/t5wCuhr8Jtu5cxwIzvbTegR0R" target="_blank"><img src="https://asciinema.org/a/t5wCuhr8Jtu5cxwIzvbTegR0R.svg" /></a>
 
