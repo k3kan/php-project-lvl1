@@ -1,22 +1,16 @@
 {
     "name": "k3kan/test-package",
-    "bin":["bin/brain-games",
+    "bin":[
 	   "bin/brain-even",
 	   "bin/brain-calc",
 	   "bin/brain-gcd",
 	   "bin/brain-progression",
-           "bin/brain-prime",
-           "bin/games"
+       "bin/brain-prime"
 	],
     "description": "First project",
     "autoload": {
 	"files": [
-		"src/Cli.php",
-                "games/Calc.php",
-		"games/Even.php",
-                "games/gcd.php",
-                "games/prime.php",
-                "games/progression.php"
+      "games/structure.php"
 	]
 	},
     "authors": [

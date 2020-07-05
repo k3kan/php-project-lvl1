@@ -14,48 +14,10 @@ if (file_exists($autoloadPath1)) {
 
 use function cli\prompt;
 use function cli\line;
+use games\Structure;
 
-function random()
-{
-    return rand(1,100);
-}
-
-line('Welcome to the Brain Game!');
+$greering = Structure\greetUser();
 line('Find the greatest common divisor of given numbers.');
-$name = prompt('May I have your name?');
-line("Hello, %s!", $name);
-
-
-function gcd()
-{
-    $count = 0;
-    while ($count != 3)
-    {
-        global $name;
-        $num1 = random();
-        $num2 = random();
-        $num1 < $num2 ? $least = $num1 : $least= $num2;
-        $nod = 1;
-        line("Question: %s %s", $num1, $num2);
-        $number = prompt('You answer');
-        for ($i = 2; $i <= $least; $i++) {
-            if ($num1 % $i === 0 && $num2 % $i === 0) {
-                $nod = $i;
-            }
-        }
-        if ( (int) $number === (int) $nod) {
-            line("Correct");
-            $count++;
-        }
-        else {
-                line("'%s' is wrong answer ;(. Correct answer was '%s'.", $number, $nod);
-                line("Let's try again, %s!", $name);
-                break;
-            }
-    }
-    if ($count === 3) {
-        line("Congratulation, %s!", $name);
-    }
-}
-
-gcd();
+$nameUser = Structure\askUserName();
+$calculation = Structure\getgcd();
+$outputQuestinAnswer = Structure\checkTerms($calculation, $nameUser);

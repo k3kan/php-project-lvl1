@@ -12,43 +12,12 @@ if (file_exists($autoloadPath1)) {
     require_once $autoloadPath2;
 }
 
-
-
 use function cli\prompt;
 use function cli\line;
+use games\Structure;
 
-function random()
-{
-    return rand(1,100);
-}
-
-line('Welcome to the Brain Game!');
-$name = prompt('May I have your name?');
-line("Hello, %s!", $name);
-
-
-function PatiryCheck()
-{
-    global $name;
-    $count = 0;
-    while ($count !== 3) {
-        $rand = random();
-        line("Question: %s", $rand);
-        $number = prompt('You answer');
-        $rand % 2 === 0? $answer = 'yes' : $answer = 'no';
-        if ($number === $answer) {
-            line("Correct");
-            $count++;
-        }
-        else {
-            line("'%s' is wrong answer ;(. Correct answer was '%s'.", $number, $answer);
-            line("Let's try again, %s!", $name);  
-            break;
-        }
-}
-if ($count === 3) {
-    line("Congratulation, %s!", $name);
-}
-}
-
-PatiryCheck();
+$greering = Structure\greetUser();
+line('Answer "yes" if the number is even, otherwise answer "no"');
+$nameUser = Structure\askUserName();
+$calculation = Structure\getPatiryCheck();
+$outputQuestinAnswer = Structure\checkTerms($calculation, $nameUser);
