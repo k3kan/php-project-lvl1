@@ -5,12 +5,11 @@ namespace games\Structure;
 use function cli\prompt;
 use function cli\line;
 
-
-CONST arrayAllOperations = [];
+const ARRAYALLOPERATIONS = [];
 
 function random()
 {
-    return rand(1,100);
+    return rand(1, 100);
 }
 
 function greetUser()
@@ -51,7 +50,7 @@ function checkTerms($arrayCalculation, $nameUser)
                 break;
             }
         }
-    } while ($terms) ;
+    } while ($terms);
 }
 
 function getCalculation()
@@ -111,7 +110,7 @@ function getBrainPrime()
         $simple = 0;
         $array_to_10 = [1, 3, 5, 7];
         for ($j = 2; $j < 9; $j++) {
-            if ($number % $i === 0) {
+            if ($number % $j === 0) {
                 $simple++;
             }
         }
