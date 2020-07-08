@@ -4,6 +4,7 @@ namespace games\Structure;
 
 use function cli\prompt;
 use function cli\line;
+use Games\Calc;
 
 const ARRAYALLOPERATIONS = [];
 
@@ -23,7 +24,14 @@ function askUserName()
     line("Hello, %s!", $name);
     return $name;
 }
+$calculationArray = [];
 
+function calculationTest()
+{
+    global $calculationArray;
+    $calculationArray[] = Calc\getCalculation();
+}
+calculationTest();
 
 function checkTerms($arrayCalculation, $nameUser)
 {

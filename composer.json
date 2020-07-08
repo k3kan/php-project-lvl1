@@ -10,7 +10,8 @@
     "description": "First project",
     "autoload": {
 	"files": [
-      "games/structure.php"
+      "games/structure.php",
+      "games/calc.php"
 	]
 	},
     "authors": [
