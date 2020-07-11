@@ -8,48 +8,47 @@
 Install brain games
 
 
-<a href="https://asciinema.org/a/qZIU0DKaMYDGoIhdLL4l1T8if" target="_blank"><img src="https://asciinema.org/a/qZIU0DKaMYDGoIhdLL4l1T8if.svg" /></a>
+<a href="https://asciinema.org/a/xw8QsC3O59zUF56xYlpbBNOi4" target="_blank"><img src="https://asciinema.org/a/xw8QsC3O59zUF56xYlpbBNOi4.svg" /></a>
 
 
 Brain even (parity check correct) 
 
-<a href="https://asciinema.org/a/ebrEuLQ04RXMQyR7NlW4vqEQ3" target="_blank"><img src="https://asciinema.org/a/ebrEuLQ04RXMQyR7NlW4vqEQ3.svg" /></a>
+<a href="https://asciinema.org/a/9KraqZzT0wZGJY5LxPkwbfd0Q" target="_blank"><img src="https://asciinema.org/a/9KraqZzT0wZGJY5LxPkwbfd0Q.svg" /></a>
 
 Brain even (parity check incorrect)
 
-<a href="https://asciinema.org/a/3kQciJXDh2REkTtWdRzbWwE1C" target="_blank"><img src="https://asciinema.org/a/3kQciJXDh2REkTtWdRzbWwE1C.svg" /></a>
+<a href="https://asciinema.org/a/SDoOZeVibABauStRZhkv4k2Ji" target="_blank"><img src="https://asciinema.org/a/SDoOZeVibABauStRZhkv4k2Ji.svg" /></a>
 
 Brain-calc (Correct answers)
 
-<a href="https://asciinema.org/a/TpvNKLbckOdpuWL11Hx48HOE7" target="_blank"><img src="https://asciinema.org/a/TpvNKLbckOdpuWL11Hx48HOE7.svg" /></a>
+<a href="https://asciinema.org/a/3vsQ3ELODzvBn7cg03M2FvY7n" target="_blank"><img src="https://asciinema.org/a/3vsQ3ELODzvBn7cg03M2FvY7n.svg" /></a>
 
 Brain-calc (Incorrect answers)
 
-<a href="https://asciinema.org/a/ENuinE2IxObJGTBUZcpaGzoU3" target="_blank"><img src="https://asciinema.org/a/ENuinE2IxObJGTBUZcpaGzoU3.svg" /></a>
-
+<a href="https://asciinema.org/a/wTOGTaHE9qNXLJCU9yXbGZk2o" target="_blank"><img src="https://asciinema.org/a/wTOGTaHE9qNXLJCU9yXbGZk2o.svg" /></a>
 
 Brain-prime.
 Answer "yes" if given number is prime. Otherwise answer "no".
 Correct answers
 
-<a href="https://asciinema.org/a/I3lQomPvcbiB8pGjbH6vimR2k" target="_blank"><img src="https://asciinema.org/a/I3lQomPvcbiB8pGjbH6vimR2k.svg" /></a>
+<a href="https://asciinema.org/a/ftyBnppjTnpfc0tEEEo0oD6HY" target="_blank"><img src="https://asciinema.org/a/ftyBnppjTnpfc0tEEEo0oD6HY.svg" /></a>
 
 Incorrect answers
 
 
-<a href="https://asciinema.org/a/irJIF6Jc0dOweZi3GxC7LQgcz" target="_blank"><img src="https://asciinema.org/a/irJIF6Jc0dOweZi3GxC7LQgcz.svg" /></a>
+<a href="https://asciinema.org/a/CK8EmGRhqjRymFjdiciojdznv" target="_blank"><img src="https://asciinema.org/a/CK8EmGRhqjRymFjdiciojdznv.svg" /></a>
 
 
 Brain-gcd.
 Find the greatest common divisor of given numbers.
 Correct answers.
 
-<a href="https://asciinema.org/a/vxiT9Qsy7OoiRl0pdlUgdeyDr" target="_blank"><img src="https://asciinema.org/a/vxiT9Qsy7OoiRl0pdlUgdeyDr.svg" /></a>
+<a href="https://asciinema.org/a/8IbghQrkHaGCFh0N88K472hdW" target="_blank"><img src="https://asciinema.org/a/8IbghQrkHaGCFh0N88K472hdW.svg" /></a>
 
 Incorrect answers
 
 
-<a href="https://asciinema.org/a/ucwCNsApn60ZL40of7XME90CR" target="_blank"><img src="https://asciinema.org/a/ucwCNsApn60ZL40of7XME90CR.svg" /></a>
+<a href="https://asciinema.org/a/DbfqvBieD0td1QsAZTeGEysOI" target="_blank"><img src="https://asciinema.org/a/DbfqvBieD0td1QsAZTeGEysOI.svg" /></a>
 
 
 
@@ -62,10 +61,7 @@ Correct answers.
 
 Incorrect answers
 
-<a href="https://asciinema.org/a/2VtWDxm63L4I0ttoVgD0UD9ln" target="_blank"><img src="https://asciinema.org/a/2VtWDxm63L4I0ttoVgD0UD9ln.svg" /></a>
+<a href="https://asciinema.org/a/OmMVM9tq4ldQ2zSevefRMfIOw" target="_blank"><img src="https://asciinema.org/a/OmMVM9tq4ldQ2zSevefRMfIOw.svg" /></a>
 
 
-Full games
-
-<a href="https://asciinema.org/a/t5wCuhr8Jtu5cxwIzvbTegR0R" target="_blank"><img src="https://asciinema.org/a/t5wCuhr8Jtu5cxwIzvbTegR0R.svg" /></a>
 
