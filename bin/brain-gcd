@@ -14,10 +14,11 @@ if (file_exists($autoloadPath1)) {
 
 use function cli\prompt;
 use function cli\line;
-use games\Structure;
+use Brain\Games\Structure;
+use Games\Gcd;
 
-$greering = Structure\greetUser();
+line('Welcome to the Brain Game!');
 line('Find the greatest common divisor of given numbers.');
 $nameUser = Structure\askUserName();
-$calculation = Structure\getgcd();
+$calculation = Gcd\getgcd();
 $outputQuestinAnswer = Structure\checkTerms($calculation, $nameUser);

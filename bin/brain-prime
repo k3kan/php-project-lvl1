@@ -14,10 +14,11 @@ if (file_exists($autoloadPath1)) {
 
 use function cli\prompt;
 use function cli\line;
-use games\Structure;
+use Brain\Games\Structure;
+use Games\Prime;
 
-$greering = Structure\greetUser();
+line('Welcome to the Brain Game!');
 line('Answer "yes" if given number is prime. Otherwise answer "no".');
 $nameUser = Structure\askUserName();
-$calculation = Structure\getBrainPrime();
+$calculation = Prime\getBrainPrime();
 $outputQuestinAnswer = Structure\checkTerms($calculation, $nameUser);

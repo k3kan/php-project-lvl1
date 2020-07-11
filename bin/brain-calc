@@ -1,8 +1,7 @@
 #!/usr/bin/env php
 <?php
 
-
-namespace bin\Brain\Calc;
+namespace Bin\Brain\Calc;
 
 $autoloadPath1 = __DIR__ . '/../../../autoload.php';
 $autoloadPath2 = __DIR__ . '/../vendor/autoload.php';
@@ -15,13 +14,13 @@ if (file_exists($autoloadPath1)) {
 
 use function cli\prompt;
 use function cli\line;
-use games\Structure;
+use Brain\Games\Structure;
+use Games\Calc;
 
-
-$greering = Structure\greetUser();
+line('Welcome to the Brain Game!');
 line('What is the result of the expression?');
 $nameUser = Structure\askUserName();
-$calculation = Structure\getCalculation();
+$calculation = Calc\getCalculation();
 $outputQuestinAnswer = Structure\checkTerms($calculation, $nameUser);
 
 

@@ -1,7 +1,7 @@
 #!/usr/bin/env php
 <?php
 
-namespace bin\Brain\Even;
+namespace Bin\Brain\Even;
 
 $autoloadPath1 = __DIR__ . '/../../../autoload.php';
 $autoloadPath2 = __DIR__ . '/../vendor/autoload.php';
@@ -14,10 +14,11 @@ if (file_exists($autoloadPath1)) {
 
 use function cli\prompt;
 use function cli\line;
-use games\Structure;
+use Brain\Games\Structure;
+use Games\Even;
 
-$greering = Structure\greetUser();
+line('Welcome to the Brain Game!');
 line('Answer "yes" if the number is even, otherwise answer "no"');
 $nameUser = Structure\askUserName();
-$calculation = Structure\getPatiryCheck();
+$calculation = Even\getPatiryCheck();
 $outputQuestinAnswer = Structure\checkTerms($calculation, $nameUser);

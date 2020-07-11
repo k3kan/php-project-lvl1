@@ -11,12 +11,14 @@ if (file_exists($autoloadPath1)) {
 } else {
     require_once $autoloadPath2;
 }
+
 use function cli\prompt;
 use function cli\line;
-use games\Structure;
+use Brain\Games\Structure;
+use Games\Progression;
 
-$greering = Structure\greetUser();
+line('Welcome to the Brain Game!');
 line('What number is missing in the progression?');
 $nameUser = Structure\askUserName();
-$calculation = Structure\getprogression();
+$calculation = Progression\getprogression();
 $outputQuestinAnswer = Structure\checkTerms($calculation, $nameUser);
