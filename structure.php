@@ -10,18 +10,6 @@ function random()
     return rand(1, 100);
 }
 
-function autoloadGames($dir)
-{
-    $autoloadPath1 = $dir . '/../../../autoload.php';
-    $autoloadPath2 = $dir . '/../vendor/autoload.php';
-
-    if (file_exists($autoloadPath1)) {
-        return require_once $autoloadPath1;
-    } else {
-        return require_once $autoloadPath2;
-    }
-}
-
 function askUserName()
 {
     $name = prompt('May I have your name?');
