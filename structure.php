@@ -17,7 +17,6 @@ function askUserName()
     return $name;
 }
 
-
 function checkTerms($arrayCalculation, $UserName)
 {
     $terms = true;
