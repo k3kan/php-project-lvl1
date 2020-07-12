@@ -2,11 +2,13 @@
 
 namespace Games\Calc;
 
+use Brain\Games\Structure;
+
 function getCalculation()
 {
     for ($i = 0; $i < 3; $i++) {
-        $rand1 = rand(1, 100);
-        $rand2 = rand(1, 100);
+        $rand1 = Structure\random();
+        $rand2 = Structure\random();
         $result = 0;
         $operation = ['+', '-', '*'];
         $calculation = $operation[rand(0, 2)];
