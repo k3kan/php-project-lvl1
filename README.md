@@ -70,8 +70,7 @@ Brain-progression.
 What number is missing in the progression?
 Correct answers.
 
-<a href="https://asciinema.org/a/vPcA9P0LYcbdjEp5NNxa8eMk5" target="_blank"><img src="https://asciinema.org/a/vPcA9P0LYcbdjEp5NNxa8eMk5.svg" /></a>
-
+<a href="https://asciinema.org/a/jhbiesPldLTnEoIHq4bbzI5D9" target="_blank"><img src="https://asciinema.org/a/jhbiesPldLTnEoIHq4bbzI5D9.svg" /></a>
 
 Incorrect answers
 
