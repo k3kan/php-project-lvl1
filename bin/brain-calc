@@ -2,11 +2,11 @@
 <?php
 
 namespace Bin\Brain\Calc;
-require_once ('../autoloaderGames.php');
+require_once (__DIR__ . '/../autoloaderGames.php');
 use function Brain\Games\AutoloaderGames\autoloadGames;
 
 $dir = __DIR__;
-autoloadGames($dir);
+require_once autoloadGames($dir);
 
 use function cli\prompt;
 use function cli\line;

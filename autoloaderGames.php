@@ -8,8 +8,8 @@ function autoloadGames($dir)
     $autoloadPath2 = $dir . '/../vendor/autoload.php';
 
     if (file_exists($autoloadPath1)) {
-        require_once $autoloadPath1;
+        return $autoloadPath1;
     } else {
-        require_once $autoloadPath2;
+        return $autoloadPath2;
     }
 }
