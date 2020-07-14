@@ -20,5 +20,5 @@ use Games\Progression;
 line('Welcome to the Brain Game!');
 line('What number is missing in the progression?');
 $nameUser = Structure\askUserName();
-$calculation = Progression\getprogression();
+$calculation = Progression\getProgression();
 $outputQuestinAnswer = Structure\checkTerms($calculation, $nameUser);

@@ -20,5 +20,5 @@ use Games\Gcd;
 line('Welcome to the Brain Game!');
 line('Find the greatest common divisor of given numbers.');
 $nameUser = Structure\askUserName();
-$calculation = Gcd\getgcd();
+$calculation = Gcd\getMaxDivider();
 $outputQuestinAnswer = Structure\checkTerms($calculation, $nameUser);

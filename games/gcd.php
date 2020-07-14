@@ -2,20 +2,20 @@
 
 namespace Games\Gcd;
 
-function getgcd()
+function getMaxDivider()
 {
     for ($numOfTry = 0; $numOfTry < 3; $numOfTry++) {
-        $num1 = rand(1, 100);
-        $num2 = rand(1, 100);
-        $num1 < $num2 ? $least = $num1 : $least = $num2;
-        $nod = 1;
-        $question = "Question: {$num1} {$num2}";
+        $randomNumberOne = rand(1, 100);
+        $randomNumberTwo = rand(1, 100);
+        $randomNumberOne < $randomNumberTwo ? $least = $randomNumberOne : $least = $randomNumberTwo;
+        $maxDivider = 1;
+        $question = "Question: {$randomNumberOne} {$randomNumberTwo}";
         for ($checkDivider = 2; $checkDivider <= $least; $checkDivider++) {
-            if ($num1 % $checkDivider === 0 && $num2 % $checkDivider === 0) {
-                $nod = $checkDivider;
+            if ($randomNumberOne % $checkDivider === 0 && $randomNumberTwo % $checkDivider === 0) {
+                $maxDivider = $checkDivider;
             }
         }
-        $arrayAllOperations[$question] = (int) $nod;
+        $arrayOperations[$question] = (int) $maxDivider;
     }
-    return $arrayAllOperations;
+    return $arrayOperations;
 }

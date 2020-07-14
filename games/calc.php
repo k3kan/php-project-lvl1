@@ -6,21 +6,21 @@ use Brain\Games\Structure;
 
 function getCalculation()
 {
-    for ($i = 0; $i < 3; $i++) {
-        $rand1 = Structure\random();
-        $rand2 = Structure\random();
+    for ($attempt = 0; $attempt < 3; $attempt++) {
+        $randomNumberOne = Structure\randomNumber();
+        $randomNumberTwo = Structure\randomNumber();
         $result = 0;
         $operation = ['+', '-', '*'];
         $calculation = $operation[rand(0, 2)];
-        $question = "Question: {$rand1} {$calculation} {$rand2}";
+        $question = "Question: {$randomNumberOne} {$calculation} {$randomNumberTwo}";
         if ($calculation === '+') {
-            $result = $rand1 + $rand2;
+            $result = $randomNumberOne + $randomNumberTwo;
         } elseif ($calculation === '-') {
-            $result = $rand1 - $rand2;
+            $result = $randomNumberOne - $randomNumberTwo;
         } elseif ($calculation === '*') {
-            $result = $rand1 * $rand2;
+            $result = $randomNumberOne * $randomNumberTwo;
         }
-        $arrayAllOperations[$question] = (int) $result;
+        $arrayOperations[$question] = (int) $result;
     }
-    return $arrayAllOperations;
+    return $arrayOperations;
 }

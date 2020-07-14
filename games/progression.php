@@ -2,23 +2,23 @@
 
 namespace Games\Progression;
 
-function getprogression()
+function getProgression()
 {
     for ($i = 0; $i < 3; $i++) {
         $step = rand(1, 10);
         $startNumber = rand(1, 100);
-        $array = [];
+        $sequences = [];
         $number = $startNumber;
         $amountElementsSequences = 10;
         for ($ElementsSequences = 0; $ElementsSequences  < $amountElementsSequences; $ElementsSequences++) {
             $number += $step;
-            $array[] = $number;
+            $sequences [] = $number;
         }
         $closeNumber = rand(0, 9);
-        $temp = $array[$closeNumber];
-        $array[$closeNumber] = '..';
-        $string = implode(' ', $array);
-        $arrayAllOperations[$string] = (int) $temp;
+        $temp = $sequences [$closeNumber];
+        $sequences [$closeNumber] = '..';
+        $string = implode(' ', $sequences );
+        $arrayOperations[$string] = (int) $temp;
     }
-    return $arrayAllOperations;
+    return $arrayOperations;
 }

@@ -5,7 +5,7 @@ namespace Brain\Games\Structure;
 use function cli\prompt;
 use function cli\line;
 
-function random()
+function randomNumber()
 {
     return rand(1, 100);
 }
@@ -19,7 +19,6 @@ function askUserName()
 
 function checkTerms($arrayCalculation, $UserName)
 {
-    $terms = true;
     $numberOfCorrectAttempts = 0;
     foreach ($arrayCalculation as $question => $answer) {
         line($question);
