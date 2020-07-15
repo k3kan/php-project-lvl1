@@ -2,7 +2,7 @@
 
 namespace Games\Even;
 
-function getPatiryCheck()
+function getEvenOrNot()
 {
     for ($attempt = 0; $attempt < 3; $attempt++) {
         $randomNumber = rand(1, 100);

@@ -8,16 +8,12 @@ use function Brain\Games\AutoloaderGames\autoloadGames;
 $dir = __DIR__;
 require_once autoloadGames($dir);
 
-use function cli\prompt;
 use function cli\line;
 use Brain\Games\Structure;
-use Games\Calc;
 
 line('Welcome to the Brain Game!');
 line('What is the result of the expression?');
-$nameUser = Structure\askUserName();
-$calculation = Calc\getCalculation();
-$outputQuestinAnswer = Structure\checkTerms($calculation, $nameUser);
+Structure\getOutputGame('calc');
 
 
 

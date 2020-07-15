@@ -12,13 +12,9 @@ if (file_exists($autoloadPath1)) {
     require_once $autoloadPath2;
 }
 
-use function cli\prompt;
 use function cli\line;
 use Brain\Games\Structure;
-use Games\Gcd;
 
 line('Welcome to the Brain Game!');
 line('Find the greatest common divisor of given numbers.');
-$nameUser = Structure\askUserName();
-$calculation = Gcd\getMaxDivider();
-$outputQuestinAnswer = Structure\checkTerms($calculation, $nameUser);
+Structure\getOutputGame('gcd');

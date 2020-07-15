@@ -5,7 +5,7 @@ namespace Games\Prime;
 function getBrainPrime()
 {
     for ($numOfTry = 0; $numOfTry < 3; $numOfTry++) {
-        $randomNumber= rand(1, 100);
+        $randomNumber = rand(1, 100);
         for ($divider = 2; $divider <= $randomNumber; $divider++) {
             if ($divider * $divider <= $randomNumber & $randomNumber % $divider === 0) {
                 $answer = 'no';

@@ -17,7 +17,7 @@ function getProgression()
         $closeNumber = rand(0, 9);
         $temp = $sequences [$closeNumber];
         $sequences [$closeNumber] = '..';
-        $string = implode(' ', $sequences );
+        $string = implode(' ', $sequences);
         $arrayOperations[$string] = (int) $temp;
     }
     return $arrayOperations;
