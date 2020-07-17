@@ -2,14 +2,11 @@
 
 namespace Brain\Games\AutoloaderGames;
 
-function autoloadGames($dir)
-{
-    $autoloadPath1 = $dir . '/../../../autoload.php';
-    $autoloadPath2 = $dir . '/../vendor/autoload.php';
+$autoloadPath1 = __DIR__ . '/../../../autoload.php';
+$autoloadPath2 = __DIR__ . '/vendor/autoload.php';
 
-    if (file_exists($autoloadPath1)) {
-        return $autoloadPath1;
-    } else {
-        return $autoloadPath2;
-    }
+if (file_exists($autoloadPath1)) {
+    require_once $autoloadPath1;
+} else {
+    require_once $autoloadPath2;
 }
