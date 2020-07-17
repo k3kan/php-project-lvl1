@@ -6,6 +6,7 @@ use Brain\Games\Structure;
 
 function getCalculation()
 {
+    for ($numOfTry = 0; $numOfTry < 3; $numOfTry++) {
         $randomNumberOne = Structure\randomNumber();
         $randomNumberTwo = Structure\randomNumber();
         $result = 0;
@@ -19,6 +20,7 @@ function getCalculation()
         } elseif ($calculation === '*') {
             $result = $randomNumberOne * $randomNumberTwo;
         }
-        $arrayOperations[$question] = (int) $result;
-        return $arrayOperations;
+        $arrayOperations[$question] = (int)$result;
+    }
+    return $arrayOperations;
 }

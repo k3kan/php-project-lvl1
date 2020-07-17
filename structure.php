@@ -52,28 +52,9 @@ function computation()
     require_once ('games/gcd.php');
     require_once ('games/prime.php');
     require_once ('games/progression.php');
-  /*  for ($i = 0; $i < 3; $i++) {
-        $operations[1][] = getCalculation();
-        $operations[2][] = getEvenOrNot();
-        $operations[3][] = getMaxDivider();
-        $operations[4][] = getBrainPrime();
-        $operations[5][] = getProgression();
-    }*/
     $operations = [getCalculation(), getEvenOrNot(), getMaxDivider(), getBrainPrime(), getProgression()];
-    $oneGames = [];
-    $allGames =[];
-    $count = count($operations);
-    for ($game = 0; $game < $count; $game++) {
-        for ($repeat = 0; $repeat < 3; $repeat++) {
-            $oneGames[$game][] = $operations[$game];
-        }
-        $allGames[] = $oneGames;
-        $oneGames = [];
-    }
-
-    return $allGames;
+    return $operations;
 }
-print_r(computation());
 
 function getGameAndSolution()
 {

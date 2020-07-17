@@ -2,7 +2,7 @@
 <?php
 
 namespace Bin\Brain\Even;
-include ('../autoloaderGames.php');
+include (__DIR__ . '/../autoloaderGames.php');
 
 use function cli\line;
 use Brain\Games\Structure;
