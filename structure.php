@@ -68,7 +68,7 @@ function getQuestionAnswer(string $nameGame)
 {
     $oneGame = [];
     $maxAmountSolution = 3;
-    for ($solution = 0; $solution  < $maxAmountSolution; $solution ++) {
+    for ($solution = 0; $solution  < $maxAmountSolution; $solution++) {
         $oneQuestionAnswer = computation($nameGame);
         $oneGame[$oneQuestionAnswer[0]] = $oneQuestionAnswer[1];
         }
