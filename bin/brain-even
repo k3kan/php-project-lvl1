@@ -2,6 +2,7 @@
 <?php
 
 namespace Bin\Brain\Even;
+
 include (__DIR__ . '/../autoloaderGames.php');
 
 use function cli\line;
@@ -9,4 +10,4 @@ use Brain\Games\Structure;
 
 line('Welcome to the Brain Game!');
 line('Answer "yes" if the number is even, otherwise answer "no"');
-Structure\getOutputGame('even');
+Structure\getResultGames('even');

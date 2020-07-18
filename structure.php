@@ -45,38 +45,44 @@ function checkTerms($arrayCalculation, $UserName)
     }
 }
 
-function computation()
+function computation(string $nameGame)
 {
     require_once ('games/calc.php');
     require_once ('games/even.php');
     require_once ('games/gcd.php');
     require_once ('games/prime.php');
     require_once ('games/progression.php');
-    $operations = [getCalculation(), getEvenOrNot(), getMaxDivider(), getBrainPrime(), getProgression()];
-    return $operations;
-}
-
-function getGameAndSolution()
-{
-    $operations = computation();
-    $nameGames = ['calc', 'even', 'gcd', 'prime', 'progression'];
-    $countGames = count($nameGames);
-    $nameGameAndSolution = [];
-    for ($element = 0; $element < $countGames; $element++) {
-        $nameGameAndSolution[$nameGames[$element]] = $operations[$element];
+    if ($nameGame === 'calc') {
+        return getCalculation();
     }
-    return $nameGameAndSolution;
+    if ($nameGame === 'even') {
+        return getEvenOrNot();
+    }
+    if ($nameGame === 'gcd') {
+        return getMaxDivider();
+    }
+    if ($nameGame === 'prime') {
+        return getBrainPrime();
+    }
+    if ($nameGame === 'progression') {
+        return getProgression();
+    }
 }
 
-function getOutputGame(string $nameGame)
+function getQuestionAnswer(string $nameGame)
 {
-    $arrayGames = getGameAndSolution();
-    foreach ($arrayGames as $game => $questionAnswer) {
-        if ($nameGame === $game) {
-            $selectedGame = $questionAnswer;
+    $oneGame = [];
+    $maxAmountSolution = 3;
+    for ($solution = 0; $solution  < $maxAmountSolution; $solution ++) {
+        $oneQuestionAnswer = computation($nameGame);
+        $oneGame[$oneQuestionAnswer[0]] = $oneQuestionAnswer[1];
         }
-    }
-    $UserName = askUserName();
-    checkTerms($selectedGame, $UserName);
+    return $oneGame;
+}
 
+function getResultGames(string $nameGame)
+{
+    $nameUser = askUserName();
+    $QuestionAnswer = getQuestionAnswer($nameGame);
+    $resultGame = checkTerms($QuestionAnswer , $nameUser );
 }
