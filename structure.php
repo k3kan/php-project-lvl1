@@ -47,24 +47,19 @@ function checkTerms($arrayCalculation, $UserName)
 
 function computation(string $nameGame)
 {
-    require_once ('games/calc.php');
-    require_once ('games/even.php');
-    require_once ('games/gcd.php');
-    require_once ('games/prime.php');
-    require_once ('games/progression.php');
     if ($nameGame === 'calc') {
         return getCalculation();
     }
-    if ($nameGame === 'even') {
+    elseif ($nameGame === 'even') {
         return getEvenOrNot();
     }
-    if ($nameGame === 'gcd') {
+    elseif ($nameGame === 'gcd') {
         return getMaxDivider();
     }
-    if ($nameGame === 'prime') {
+    elseif ($nameGame === 'prime') {
         return getBrainPrime();
     }
-    if ($nameGame === 'progression') {
+    elseif ($nameGame === 'progression') {
         return getProgression();
     }
 }
@@ -84,5 +79,5 @@ function getResultGames(string $nameGame)
 {
     $nameUser = askUserName();
     $QuestionAnswer = getQuestionAnswer($nameGame);
-    $resultGame = checkTerms($QuestionAnswer , $nameUser );
+    $resultGame = checkTerms($QuestionAnswer, $nameUser);
 }
