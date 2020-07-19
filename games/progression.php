@@ -2,14 +2,16 @@
 
 namespace Games\Progression;
 
+use Brain\Games\Structure;
+
 function getProgression()
 {
     $step = rand(1, 10);
-    $startNumber = rand(1, 100);
+    $startNumber = Structure\randomNumber();
     $sequences = [];
     $number = $startNumber;
     $amountElementsSequences = 10;
-    for ($ElementsSequences = 0; $ElementsSequences  < $amountElementsSequences; $ElementsSequences++) {
+    for ($elementsSequences = 0; $elementsSequences  < $amountElementsSequences; $elementsSequences++) {
         $number += $step;
         $sequences [] = $number;
     }

@@ -10,13 +10,25 @@ use function Games\Gcd\getMaxDivider;
 use function Games\Prime\getBrainPrime;
 use function Games\Progression\getProgression;
 
+
 function randomNumber()
 {
     return rand(1, 100);
 }
 
-function askUserName()
+function askUserName(string $nameGame)
 {
+    line('Welcome to the Brain Game!');
+    $introduction = ['calc' => 'What is the result of the expression?',
+        'even' => 'Answer "yes" if the number is even, otherwise answer "no"',
+        'gcd' => 'Find the greatest common divisor of given numbers.',
+        'prime' => 'Answer "yes" if given number is prime. Otherwise answer "no".',
+        'progression' => 'What number is missing in the progression?'];
+    foreach ($introduction as $game => $resultGame) {
+        if ($nameGame=== $game) {
+            line($resultGame);
+        }
+    }
     $name = prompt('May I have your name?');
     line("Hello, %s!", $name);
     return $name;
@@ -47,21 +59,18 @@ function checkTerms($arrayCalculation, $UserName)
 
 function computation(string $nameGame)
 {
-    if ($nameGame === 'calc') {
-        return getCalculation();
+    require_once ('games/calc.php');
+    require_once ('games/even.php');
+    require_once ('games/gcd.php');
+    require_once ('games/prime.php');
+    require_once ('games/progression.php');
+    $questionAnswerGame = ['calc' => getCalculation(), 'even' => getEvenOrNot(), 'gcd' => getMaxDivider(), 'prime' => getBrainPrime(), 'progression' => getProgression()];
+    foreach ($questionAnswerGame as $game => $resultGame) {
+        if ($nameGame === $game) {
+            return $resultGame;
+        }
     }
-    elseif ($nameGame === 'even') {
-        return getEvenOrNot();
-    }
-    elseif ($nameGame === 'gcd') {
-        return getMaxDivider();
-    }
-    elseif ($nameGame === 'prime') {
-        return getBrainPrime();
-    }
-    elseif ($nameGame === 'progression') {
-        return getProgression();
-    }
+
 }
 
 function getQuestionAnswer(string $nameGame)
@@ -77,7 +86,7 @@ function getQuestionAnswer(string $nameGame)
 
 function getResultGames(string $nameGame)
 {
-    $nameUser = askUserName();
+    $nameUser = askUserName($nameGame);
     $QuestionAnswer = getQuestionAnswer($nameGame);
     $resultGame = checkTerms($QuestionAnswer, $nameUser);
 }

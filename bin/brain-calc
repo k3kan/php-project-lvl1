@@ -3,13 +3,11 @@
 
 namespace Bin\Brain\Calc;
 
-include (__DIR__ . '/../autoloaderGames.php');
+include (__DIR__ . '/../autoloader.php');
 
 use function cli\line;
 use Brain\Games\Structure;
 
-line('Welcome to the Brain Game!');
-line('What is the result of the expression?');
 Structure\getResultGames('calc');
 
 

@@ -2,10 +2,12 @@
 
 namespace Games\Gcd;
 
+use Brain\Games\Structure;
+
 function getMaxDivider()
 {
-    $randomNumberOne = rand(1, 100);
-    $randomNumberTwo = rand(1, 100);
+    $randomNumberOne = Structure\randomNumber();
+    $randomNumberTwo = Structure\randomNumber();
     $randomNumberOne < $randomNumberTwo ? $least = $randomNumberOne : $least = $randomNumberTwo;
     $maxDivider = 1;
     $question = "Question: {$randomNumberOne} {$randomNumberTwo}";

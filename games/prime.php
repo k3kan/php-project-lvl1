@@ -2,11 +2,13 @@
 
 namespace Games\Prime;
 
+use Brain\Games\Structure;
+
 function getBrainPrime()
 {
-    $randomNumber = rand(1, 100);
+    $randomNumber = Structure\randomNumber();
     for ($divider = 2; $divider <= $randomNumber; $divider++) {
-        if ($divider * $divider <= $randomNumber & $randomNumber % $divider === 0) {
+        if ($divider * $divider <= $randomNumber && $randomNumber % $divider === 0) {
             $answer = 'no';
             break;
         }

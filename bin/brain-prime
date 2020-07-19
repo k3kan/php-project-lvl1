@@ -3,11 +3,9 @@
 
 namespace Bin\Brain\Prime;
 
-include (__DIR__ . '/../autoloaderGames.php');
+include (__DIR__ . '/../autoloader.php');
 
 use function cli\line;
 use Brain\Games\Structure;
 
-line('Welcome to the Brain Game!');
-line('Answer "yes" if given number is prime. Otherwise answer "no".');
 Structure\getResultGames('prime');

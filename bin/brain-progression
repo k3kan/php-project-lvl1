@@ -3,11 +3,9 @@
 
 namespace Bin\Brain\Progression;
 
-include (__DIR__ . '/../autoloaderGames.php');
+include (__DIR__ . '/../autoloader.php');
 
 use function cli\line;
 use Brain\Games\Structure;
 
-line('Welcome to the Brain Game!');
-line('What number is missing in the progression?');
 Structure\getResultGames('progression');
