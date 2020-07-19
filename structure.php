@@ -59,11 +59,6 @@ function checkTerms($arrayCalculation, $UserName)
 
 function computation(string $nameGame)
 {
-    require_once ('games/calc.php');
-    require_once ('games/even.php');
-    require_once ('games/gcd.php');
-    require_once ('games/prime.php');
-    require_once ('games/progression.php');
     $questionAnswerGame = ['calc' => getCalculation(), 'even' => getEvenOrNot(), 'gcd' => getMaxDivider(), 'prime' => getBrainPrime(), 'progression' => getProgression()];
     foreach ($questionAnswerGame as $game => $resultGame) {
         if ($nameGame === $game) {

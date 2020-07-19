@@ -16,6 +16,6 @@ function getMaxDivider()
             $maxDivider = $checkDivider;
         }
     }
-    $arrayOperations = [$question, (int) $maxDivider];
-    return $arrayOperations;
+    $questionAnswer = [$question, (int) $maxDivider];
+    return $questionAnswer;
 }

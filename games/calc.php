@@ -19,6 +19,6 @@ function getCalculation()
     } elseif ($calculation === '*') {
         $result = $randomNumberOne * $randomNumberTwo;
     }
-    $arrayOperations = [$question, (int) $result];
-    return $arrayOperations;
+    $questionAnswer = [$question, (int) $result];
+    return $questionAnswer;
 }

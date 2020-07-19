@@ -18,6 +18,6 @@ function getBrainPrime()
         $answer = 'no';
     }
     $question = "Question: {$randomNumber}";
-    $arrayOperations = [$question, $answer];
-    return $arrayOperations;
+    $questionAnswer = [$question, $answer];
+    return $questionAnswer;
 }

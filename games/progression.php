@@ -19,6 +19,6 @@ function getProgression()
     $temp = $sequences [$closeNumber];
     $sequences [$closeNumber] = '..';
     $question = implode(' ', $sequences);
-    $arrayOperations = [$question, (int) $temp];
-    return $arrayOperations;
+    $questionAnswer = [$question, (int) $temp];
+    return $questionAnswer;
 }
