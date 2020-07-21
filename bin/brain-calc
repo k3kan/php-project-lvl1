@@ -6,7 +6,7 @@ namespace Bin\Brain\Calc;
 include (__DIR__ . '/../autoloader.php');
 
 use function cli\line;
-use Brain\Games\Structure;
+use Brain\Src\Structure;
 
 Structure\getResultGames('calc');
 
