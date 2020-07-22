@@ -6,6 +6,6 @@ namespace Bin\Brain\Progression;
 include (__DIR__ . '/../autoloader.php');
 
 use function cli\line;
-use Brain\Src\Structure;
+use Src\Games\Progression;
 
-Structure\getResultGames('progression');
+Progression\getResultGames('progression');

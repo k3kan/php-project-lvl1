@@ -6,6 +6,6 @@ namespace Bin\Brain\Gcd;
 include (__DIR__ . '/../autoloader.php');
 
 use function cli\line;
-use Brain\Src\Structure;
+use Src\Games\Gcd;
 
-Structure\getResultGames('gcd');
+Gcd\getResultGames('gcd');

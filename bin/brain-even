@@ -6,6 +6,6 @@ namespace Bin\Brain\Even;
 include (__DIR__ . '/../autoloader.php');
 
 use function cli\line;
-use Brain\Src\Structure;
+use Src\Games\Even;
 
-Structure\getResultGames('even');
+Even\getResultGames();
