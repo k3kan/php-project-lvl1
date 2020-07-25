@@ -5,7 +5,6 @@ namespace Bin\Brain\Prime;
 
 include (__DIR__ . '/../autoloader.php');
 
-use function cli\line;
 use Src\Games\Prime;
 
-Prime\getResultGames('prime');
+Prime\runGame();

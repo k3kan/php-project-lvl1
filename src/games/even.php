@@ -4,23 +4,23 @@ namespace Src\Games\Even;
 
 use Brain\Src\Structure;
 
-use const Brain\Src\Structure\MAX_AMOUNT_SOLUTION;
+use const Brain\Src\Structure\QUESTIONS;
+
+const INTRODUCTION = 'Answer "yes" if the number is even, otherwise answer "no"';
 
 function getEvenOrNot()
 {
-    for ($solution = 1; $solution  <= MAX_AMOUNT_SOLUTION; $solution++) {
+    for ($i = 1; $i <= QUESTIONS; $i++) {
         $randomNumber = Structure\randomNumber();
-        $question = "Question: {$randomNumber}";
+        $question = " {$randomNumber}";
         $randomNumber % 2 === 0 ? $answer = 'yes' : $answer = 'no';
         $questionAnswer[$question]  = $answer;
     }
     return $questionAnswer;
 }
 
-function getResultGames()
+function runGame()
 {
     $game = getEvenOrNot();
-    $introduction = 'Answer "yes" if the number is even, otherwise answer "no"';
-    $nameUser = Structure\askUserName($introduction);
-    $resultGame = Structure\checkTerms($game, $nameUser);
+    Structure\outputResult($game, INTRODUCTION);
 }

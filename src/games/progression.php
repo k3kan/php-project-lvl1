@@ -4,17 +4,18 @@ namespace Src\Games\Progression;
 
 use Brain\Src\Structure;
 
-use const Brain\Src\Structure\MAX_AMOUNT_SOLUTION;
+use const Brain\Src\Structure\QUESTIONS;
+
+const INTRODUCTION = 'What number is missing in the progression?';
 
 function getProgression()
 {
-    for ($solution = 1; $solution  <= MAX_AMOUNT_SOLUTION; $solution++) {
+    for ($i = 1; $i <= QUESTIONS; $i++) {
         $step = rand(1, 10);
-        $startNumber = Structure\randomNumber();
         $sequences = [];
-        $number = $startNumber;
-        $amountElementsSequences = 10;
-        for ($elementsSequences = 0; $elementsSequences  < $amountElementsSequences; $elementsSequences++) {
+        $number = Structure\randomNumber();
+        $endSequence = 10;
+        for ($elements = 0; $elements  < $endSequence; $elements++) {
             $number += $step;
             $sequences [] = $number;
         }
@@ -27,10 +28,8 @@ function getProgression()
     return $questionAnswer;
 }
 
-function getResultGames()
+function runGame()
 {
     $game = getProgression();
-    $introduction = 'What number is missing in the progression?';
-    $nameUser = Structure\askUserName($introduction);
-    $resultGame = Structure\checkTerms($game, $nameUser);
+    Structure\outputResult($game, INTRODUCTION);
 }

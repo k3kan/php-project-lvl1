@@ -4,13 +4,8 @@ namespace Brain\Src\Structure;
 
 use function cli\prompt;
 use function cli\line;
-use function Src\Games\Calc\getCalculation;
-use function Src\Games\Even\getEvenOrNot;
-use function Src\Games\Gcd\getMaxDivider;
-use function Src\Games\Prime\getBrainPrime;
-use function Src\Games\Progression\getProgression;
 
-const MAX_AMOUNT_SOLUTION = 3;
+const QUESTIONS = 3;
 
 function randomNumber()
 {
@@ -26,25 +21,26 @@ function askUserName(string $introduction)
     return $name;
 }
 
-function checkTerms($arrayCalculation, $UserName)
+function outputResult($arrayCalculation, $introduction)
 {
+    $userName = askUserName($introduction);
     $numberOfCorrectAttempts = 0;
     foreach ($arrayCalculation as $question => $answer) {
-        line($question);
-        $UserAnswer = prompt("You answer");
-        if ($UserAnswer !== 'yes' && $UserAnswer !== 'no') {
-            $UserAnswer = (int) $UserAnswer;
+        line("Question: {$question}");
+        $userAnswer = prompt("You answer");
+        if ($userAnswer !== 'yes' && $userAnswer !== 'no') {
+            $userAnswer = (int) $userAnswer;
         }
-        if ($UserAnswer === $answer) {
+        if ($userAnswer === $answer) {
             line("Correct!");
             $numberOfCorrectAttempts++;
         } else {
-            line("'%s' is wrong answer ;(. Correct answer was '%s'.", $UserAnswer, $answer);
-            line("Let's try again, %s!", $UserName);
+            line("'%s' is wrong answer ;(. Correct answer was '%s'.", $userAnswer, $answer);
+            line("Let's try again, %s!", $userName);
             break;
         }
     }
-    if ($numberOfCorrectAttempts === 3) {
-        line("Congratulation, %s!", $UserName);
+    if ($numberOfCorrectAttempts === QUESTIONS) {
+        line("Congratulation, %s!", $userName);
     }
 }

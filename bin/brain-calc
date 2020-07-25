@@ -5,10 +5,9 @@ namespace Bin\Brain\Calc;
 
 include (__DIR__ . '/../autoloader.php');
 
-use function cli\line;
 use Src\Games\Calc;
 
-Calc\getResultGames();
+Calc\runGame();
 
 
 

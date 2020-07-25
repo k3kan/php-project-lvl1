@@ -4,22 +4,24 @@ namespace Src\Games\Calc;
 
 use Brain\Src\Structure;
 
-use const Brain\Src\Structure\MAX_AMOUNT_SOLUTION;
+use const Brain\Src\Structure\QUESTIONS;
+
+const INTRODUCTION = 'What is the result of the expression?';
 
 function getCalculation()
 {
-    for ($solution = 1; $solution  <= MAX_AMOUNT_SOLUTION; $solution++) {
+    for ($i = 1; $i  <= QUESTIONS; $i++) {
         $randomNumberOne = Structure\randomNumber();
         $randomNumberTwo = Structure\randomNumber();
         $result = 0;
-        $operation = ['+', '-', '*'];
-        $calculation = $operation[rand(0, 2)];
-        $question = "Question: {$randomNumberOne} {$calculation} {$randomNumberTwo}";
-        if ($calculation === '+') {
+        $operations = ['+', '-', '*'];
+        $operation = array_rand($operations);
+        $question = "{$randomNumberOne} {$operations[$operation]} {$randomNumberTwo}";
+        if ($operations[$operation] === '+') {
             $result = $randomNumberOne + $randomNumberTwo;
-        } elseif ($calculation === '-') {
+        } elseif ($operations[$operation] === '-') {
             $result = $randomNumberOne - $randomNumberTwo;
-        } elseif ($calculation === '*') {
+        } elseif ($operations[$operation] === '*') {
             $result = $randomNumberOne * $randomNumberTwo;
         }
         $questionAnswer[$question] = (int) $result;
@@ -27,10 +29,8 @@ function getCalculation()
     return $questionAnswer;
 }
 
-function getResultGames()
+function runGame()
 {
     $game = getCalculation();
-    $introduction = 'What is the result of the expression?';
-    $nameUser = Structure\askUserName($introduction);
-    $resultGame = Structure\checkTerms($game, $nameUser);
+    Structure\outputResult($game, INTRODUCTION);
 }

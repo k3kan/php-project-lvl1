@@ -4,17 +4,18 @@ namespace Src\Games\Gcd;
 
 use Brain\Src\Structure;
 
-use const Brain\Src\Structure\MAX_AMOUNT_SOLUTION;
+use const Brain\Src\Structure\QUESTIONS;
+
+const INTRODUCTION = 'Find the greatest common divisor of given numbers.';
 
 function getMaxDivider()
 {
-    for ($solution = 1; $solution  <= MAX_AMOUNT_SOLUTION; $solution++) {
+    for ($i = 1; $i <= QUESTIONS; $i++) {
         $randomNumberOne = Structure\randomNumber();
         $randomNumberTwo = Structure\randomNumber();
-        $randomNumberOne < $randomNumberTwo ? $least = $randomNumberOne : $least = $randomNumberTwo;
         $maxDivider = 1;
-        $question = "Question: {$randomNumberOne} {$randomNumberTwo}";
-        for ($checkDivider = 2; $checkDivider <= $least; $checkDivider++) {
+        $question = " {$randomNumberOne} {$randomNumberTwo}";
+        for ($checkDivider = 2; $checkDivider <= $randomNumberOne; $checkDivider++) {
             if ($randomNumberOne % $checkDivider === 0 && $randomNumberTwo % $checkDivider === 0) {
                 $maxDivider = $checkDivider;
             }
@@ -24,10 +25,8 @@ function getMaxDivider()
     return $questionAnswer;
 }
 
-function getResultGames()
+function runGame()
 {
     $game = getMaxDivider();
-    $introduction = 'Find the greatest common divisor of given numbers.';
-    $nameUser = Structure\askUserName($introduction);
-    $resultGame = Structure\checkTerms($game, $nameUser);
+    Structure\outputResult($game, INTRODUCTION);
 }

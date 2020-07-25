@@ -4,32 +4,37 @@ namespace Src\Games\Prime;
 
 use Brain\Src\Structure;
 
-use const Brain\Src\Structure\MAX_AMOUNT_SOLUTION;
+use const Brain\Src\Structure\QUESTIONS;
+
+const INTRODUCTION = 'Answer "yes" if given number is prime. Otherwise answer "no".';
+
+function isPrime(int $n): bool
+{
+    if ($n < 2) {
+        return false;
+    }
+    $sqrt = sqrt($n);
+    for ($bruteForce = 2; $bruteForce <= $sqrt; $bruteForce++) {
+        if ($n % $bruteForce === 0) {
+            return false;
+        }
+    }
+    return true;
+}
 
 function getBrainPrime()
 {
-    for ($solution = 1; $solution  <= MAX_AMOUNT_SOLUTION; $solution++) {
+    for ($i = 1; $i  <= QUESTIONS; $i++) {
         $randomNumber = Structure\randomNumber();
-        for ($divider = 2; $divider <= $randomNumber; $divider++) {
-            if ($divider * $divider <= $randomNumber && $randomNumber % $divider === 0) {
-                $answer = 'no';
-                break;
-            }
-            $answer = 'yes';
-        }
-        if ($randomNumber < 2) {
-            $answer = 'no';
-        }
-        $question = "Question: {$randomNumber}";
+        isPrime($randomNumber) ? $answer = 'yes' : $answer = 'no';
+        $question = " {$randomNumber}";
         $questionAnswer[$question] = $answer;
     }
     return $questionAnswer;
 }
 
-function getResultGames()
+function runGame()
 {
     $game = getBrainPrime();
-    $introduction = 'Answer "yes" if given number is prime. Otherwise answer "no".';
-    $nameUser = Structure\askUserName($introduction);
-    $resultGame = Structure\checkTerms($game, $nameUser);
+    Structure\outputResult($game, INTRODUCTION);
 }
