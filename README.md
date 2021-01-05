@@ -1,7 +1,7 @@
 ![check-linter](https://github.com/k3kan/php-project-lvl1/workflows/check-linter/badge.svg)
 
 <a href="https://codeclimate.com/github/k3kan/php-project-lvl1/maintainability"><img src="https://api.codeclimate.com/v1/badges/5b0c2148ed530abb9d2f/maintainability" /></a>
-# Добро пожаловать!
+# Добро пожаловать!!
 
 Проект представляет собой пять мини-игр, которые пользователь может выбрать. Чтобы успешно пройти игру, требуется верно ответить на 3 вопроса.
 Список мини-игр:
