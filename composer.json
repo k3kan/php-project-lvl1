@@ -1,5 +1,5 @@
 {
-    "name": "k3kan/test-package",
+    "name": "hexlet/code",
     "bin":[
 	   "bin/brain-even",
 	   "bin/brain-calc",

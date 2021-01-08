@@ -6,7 +6,7 @@ use Brain\Src\Structure;
 
 use const Brain\Src\Structure\QUESTIONS;
 
-const INTRODUCTION = 'Answer "yes" if the number is even, otherwise answer "no"';
+const INTRODUCTION = 'Answer "yes" if the number is even, otherwise answer "no".';
 
 function getEvenOrNot()
 {

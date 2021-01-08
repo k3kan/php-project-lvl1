@@ -15,9 +15,9 @@ function randomNumber()
 function askUserName(string $introduction)
 {
     line('Welcome to the Brain Game!');
-    line($introduction);
     $name = prompt('May I have your name?');
     line("Hello, %s!", $name);
+    line($introduction);
     return $name;
 }
 
@@ -27,7 +27,7 @@ function outputResult($arrayCalculation, $introduction)
     $numberOfCorrectAttempts = 0;
     foreach ($arrayCalculation as $question => $answer) {
         line("Question: {$question}");
-        $userAnswer = prompt("You answer");
+        $userAnswer = prompt("Your answer");
         if ($userAnswer !== 'yes' && $userAnswer !== 'no') {
             $userAnswer = (int) $userAnswer;
         }
