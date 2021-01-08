@@ -25,7 +25,7 @@ function outputResult($arrayCalculation, $introduction)
 {
     $userName = askUserName($introduction);
     $numberOfCorrectAttempts = 0;
-    foreach ($arrayCalculation as  $question => $answer) {
+    foreach ($arrayCalculation as $question => $answer) {
         line("Question: {$question}");
         $userAnswer = prompt("Your answer");
         if ($userAnswer !== 'yes' && $userAnswer !== 'no') {
