@@ -12,9 +12,8 @@ function getEvenOrNot()
 {
     for ($i = 1; $i <= QUESTIONS; $i++) {
         $randomNumber = Structure\randomNumber();
-        $question = " {$randomNumber}";
         $randomNumber % 2 === 0 ? $answer = 'yes' : $answer = 'no';
-        $questionAnswer[$question]  = $answer;
+        $questionAnswer[$randomNumber]  = $answer;
     }
     return $questionAnswer;
 }

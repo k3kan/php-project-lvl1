@@ -27,8 +27,7 @@ function getBrainPrime()
     for ($i = 1; $i  <= QUESTIONS; $i++) {
         $randomNumber = Structure\randomNumber();
         isPrime($randomNumber) ? $answer = 'yes' : $answer = 'no';
-        $question = " {$randomNumber}";
-        $questionAnswer[$question] = $answer;
+        $questionAnswer[$randomNumber] = $answer;
     }
     return $questionAnswer;
 }
