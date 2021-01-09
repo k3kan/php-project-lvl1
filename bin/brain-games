@@ -4,3 +4,6 @@
 include (__DIR__ . '/../autoloader.php');
 
 use Brain\Src\Cli;
+
+Cli\askedName();
+
