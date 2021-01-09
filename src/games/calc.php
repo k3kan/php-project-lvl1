@@ -10,7 +10,7 @@ const INTRODUCTION = 'What is the result of the expression?';
 
 function getCalculation()
 {
-    $questionAnswer =[];
+    $questionAnswer = [];
     for ($i = 1; $i  <= QUESTIONS; $i++) {
         $randomNumberOne = Structure\randomNumber();
         $randomNumberTwo = Structure\randomNumber();
