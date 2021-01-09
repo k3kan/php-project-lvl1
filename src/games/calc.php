@@ -25,7 +25,7 @@ function getCalculation(): array
         } else {
             $result = $randomNumberOne * $randomNumberTwo;
         }
-        $questionAnswer[$question] = (int) $result;
+        $questionAnswer[$question] = $result;
     }
     return $questionAnswer;
 }
