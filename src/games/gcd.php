@@ -14,7 +14,7 @@ function getMaxDivider()
         $randomNumberOne = Structure\randomNumber();
         $randomNumberTwo = Structure\randomNumber();
         $maxDivider = 1;
-        $question = " {$randomNumberOne} {$randomNumberTwo}";
+        $question = "{$randomNumberOne} {$randomNumberTwo}";
         for ($checkDivider = 2; $checkDivider <= $randomNumberOne; $checkDivider++) {
             if ($randomNumberOne % $checkDivider === 0 && $randomNumberTwo % $checkDivider === 0) {
                 $maxDivider = $checkDivider;

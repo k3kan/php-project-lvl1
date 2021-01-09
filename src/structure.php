@@ -41,6 +41,6 @@ function outputResult($arrayCalculation, $introduction)
         }
     }
     if ($numberOfCorrectAttempts === QUESTIONS) {
-        line("Congratulation, %s!", $userName);
+        line("Congratulations, %s!", $userName);
     }
 }
