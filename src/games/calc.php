@@ -10,6 +10,7 @@ const INTRODUCTION = 'What is the result of the expression?';
 
 function getCalculation()
 {
+    $questionAnswer =[];
     for ($i = 1; $i  <= QUESTIONS; $i++) {
         $randomNumberOne = Structure\randomNumber();
         $randomNumberTwo = Structure\randomNumber();
@@ -29,7 +30,7 @@ function getCalculation()
     return $questionAnswer;
 }
 
-function runGame()
+function runGame(): void
 {
     $game = getCalculation();
     Structure\outputResult($game, INTRODUCTION);

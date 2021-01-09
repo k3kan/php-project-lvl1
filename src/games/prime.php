@@ -24,6 +24,7 @@ function isPrime(int $n): bool
 
 function getBrainPrime()
 {
+    $questionAnswer = [];
     for ($i = 1; $i  <= QUESTIONS; $i++) {
         $randomNumber = Structure\randomNumber();
         isPrime($randomNumber) ? $answer = 'yes' : $answer = 'no';
@@ -32,7 +33,7 @@ function getBrainPrime()
     return $questionAnswer;
 }
 
-function runGame()
+function runGame(): void
 {
     $game = getBrainPrime();
     Structure\outputResult($game, INTRODUCTION);

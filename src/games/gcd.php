@@ -10,6 +10,7 @@ const INTRODUCTION = 'Find the greatest common divisor of given numbers.';
 
 function getMaxDivider()
 {
+    $questionAnswer = [];
     for ($i = 1; $i <= QUESTIONS; $i++) {
         $randomNumberOne = Structure\randomNumber();
         $randomNumberTwo = Structure\randomNumber();
@@ -25,7 +26,7 @@ function getMaxDivider()
     return $questionAnswer;
 }
 
-function runGame()
+function runGame(): void
 {
     $game = getMaxDivider();
     Structure\outputResult($game, INTRODUCTION);

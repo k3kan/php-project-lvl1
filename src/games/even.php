@@ -10,6 +10,7 @@ const INTRODUCTION = 'Answer "yes" if the number is even, otherwise answer "no".
 
 function getEvenOrNot()
 {
+    $questionAnswer = [];
     for ($i = 1; $i <= QUESTIONS; $i++) {
         $randomNumber = Structure\randomNumber();
         $randomNumber % 2 === 0 ? $answer = 'yes' : $answer = 'no';
@@ -18,7 +19,7 @@ function getEvenOrNot()
     return $questionAnswer;
 }
 
-function runGame()
+function runGame(): void
 {
     $game = getEvenOrNot();
     Structure\outputResult($game, INTRODUCTION);

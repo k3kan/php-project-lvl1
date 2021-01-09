@@ -10,6 +10,7 @@ const INTRODUCTION = 'What number is missing in the progression?';
 
 function getProgression()
 {
+    $questionAnswer = [];
     for ($i = 1; $i <= QUESTIONS; $i++) {
         $step = rand(1, 10);
         $sequences = [];
@@ -28,7 +29,7 @@ function getProgression()
     return $questionAnswer;
 }
 
-function runGame()
+function runGame(): void
 {
     $game = getProgression();
     Structure\outputResult($game, INTRODUCTION);
