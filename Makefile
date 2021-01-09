@@ -21,4 +21,3 @@ brain-progression:
 
 brain-games:
 	./bin/brain-games
-
