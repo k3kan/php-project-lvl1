@@ -21,7 +21,7 @@ function askUserName(string $introduction): string
     return $name;
 }
 
-function outputResult(array $arrayCalculation,string $introduction): void
+function outputResult(array $arrayCalculation, string $introduction): void
 {
     $userName = askUserName($introduction);
     $numberOfCorrectAttempts = 0;
