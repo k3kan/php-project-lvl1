@@ -8,7 +8,7 @@ use const Brain\Src\Structure\QUESTIONS;
 
 const INTRODUCTION = 'What number is missing in the progression?';
 
-function getProgression()
+function getProgression(): array
 {
     $questionAnswer = [];
     for ($i = 1; $i <= QUESTIONS; $i++) {

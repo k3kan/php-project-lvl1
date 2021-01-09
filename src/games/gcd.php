@@ -8,7 +8,7 @@ use const Brain\Src\Structure\QUESTIONS;
 
 const INTRODUCTION = 'Find the greatest common divisor of given numbers.';
 
-function getMaxDivider()
+function getMaxDivider(): array
 {
     $questionAnswer = [];
     for ($i = 1; $i <= QUESTIONS; $i++) {
@@ -21,7 +21,7 @@ function getMaxDivider()
                 $maxDivider = $checkDivider;
             }
         }
-        $questionAnswer[$question] = (int) $maxDivider;
+        $questionAnswer[$question] = $maxDivider;
     }
     return $questionAnswer;
 }

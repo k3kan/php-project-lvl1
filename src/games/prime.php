@@ -22,7 +22,7 @@ function isPrime(int $n): bool
     return true;
 }
 
-function getBrainPrime()
+function getBrainPrime(): array
 {
     $questionAnswer = [];
     for ($i = 1; $i  <= QUESTIONS; $i++) {

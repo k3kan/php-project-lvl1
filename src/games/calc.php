@@ -8,7 +8,7 @@ use const Brain\Src\Structure\QUESTIONS;
 
 const INTRODUCTION = 'What is the result of the expression?';
 
-function getCalculation()
+function getCalculation(): array
 {
     $questionAnswer = [];
     for ($i = 1; $i  <= QUESTIONS; $i++) {
@@ -22,7 +22,7 @@ function getCalculation()
             $result = $randomNumberOne + $randomNumberTwo;
         } elseif ($operations[$operation] === '-') {
             $result = $randomNumberOne - $randomNumberTwo;
-        } elseif ($operations[$operation] === '*') {
+        } else {
             $result = $randomNumberOne * $randomNumberTwo;
         }
         $questionAnswer[$question] = (int) $result;

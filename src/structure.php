@@ -7,12 +7,12 @@ use function cli\line;
 
 const QUESTIONS = 3;
 
-function randomNumber()
+function randomNumber(): int
 {
     return rand(1, 100);
 }
 
-function askUserName(string $introduction)
+function askUserName(string $introduction): string
 {
     line('Welcome to the Brain Game!');
     $name = prompt('May I have your name?');
@@ -21,7 +21,7 @@ function askUserName(string $introduction)
     return $name;
 }
 
-function outputResult($arrayCalculation, $introduction)
+function outputResult(array $arrayCalculation,string $introduction): void
 {
     $userName = askUserName($introduction);
     $numberOfCorrectAttempts = 0;

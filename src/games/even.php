@@ -8,7 +8,7 @@ use const Brain\Src\Structure\QUESTIONS;
 
 const INTRODUCTION = 'Answer "yes" if the number is even, otherwise answer "no".';
 
-function getEvenOrNot()
+function getEvenOrNot(): array
 {
     $questionAnswer = [];
     for ($i = 1; $i <= QUESTIONS; $i++) {
